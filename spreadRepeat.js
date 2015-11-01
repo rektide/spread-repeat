@@ -11,12 +11,16 @@ function spreadRepeat(){
 			return true
 		}
 		val= results[ n]= args[ n]()
-		val.then( function( result){
+		if( !val.then){
+			return true
+		}
+		results[ n]= val.then( function( result){
 			results[ n]= result|| true
-		}, function(){
+		}, function( ex){
 			results[ n]= undefined
+			throw ex
 		})
-		return !val.then
+		return false
 	}
 	function iterate(){
 		var
