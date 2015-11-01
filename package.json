@@ -1,0 +1,21 @@
+{
+	"name": "spread-repeat",
+	"version": "1.0.0",
+	"description": "For a collection of factory functions, run (via Promise#spread) until they all resolve.",
+	"main": "spreadRepeat.js",
+	"dependencies": {
+		"prfun": "^2.1.1"
+	},
+	"devDependencies": {
+		"tape": "^4.2.2"
+	},
+	"scripts": {
+		"test": "node .test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://archive.voodoowarez.com/spread-repeat"
+	},
+	"author": "rektide de la faye",
+	"license": "X"
+}
